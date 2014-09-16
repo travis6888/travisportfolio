@@ -3,72 +3,6 @@ from django.utils.crypto import get_random_string
 
 
 ######################
-# CARTRIDGE SETTINGS #
-######################
-
-# The following settings are already defined in cartridge.shop.defaults
-# with default values, but are common enough to be put here, commented
-# out, for convenient overriding.
-
-# Sequence of available credit card types for payment.
-# SHOP_CARD_TYPES = ("Mastercard", "Visa", "Diners", "Amex")
-
-# Setting to turn on featured images for shop categories. Defaults to False.
-# SHOP_CATEGORY_USE_FEATURED_IMAGE = True
-
-# Set an alternative OrderForm class for the checkout process.
-# SHOP_CHECKOUT_FORM_CLASS = 'cartridge.shop.forms.OrderForm'
-
-# If True, the checkout process is split into separate
-# billing/shipping and payment steps.
-# SHOP_CHECKOUT_STEPS_SPLIT = True
-
-# If True, the checkout process has a final confirmation step before
-# completion.
-# SHOP_CHECKOUT_STEPS_CONFIRMATION = True
-
-# Controls the formatting of monetary values accord to the locale
-# module in the python standard library. If an empty string is
-# used, will fall back to the system's locale.
-# SHOP_CURRENCY_LOCALE = ""
-
-# Dotted package path and class name of the function that
-# is called on submit of the billing/shipping checkout step. This
-# is where shipping calculation can be performed and set using the
-# function ``cartridge.shop.utils.set_shipping``.
-# SHOP_HANDLER_BILLING_SHIPPING = \
-#                           "cartridge.shop.checkout.default_billship_handler"
-
-# Dotted package path and class name of the function that
-# is called once an order is successful and all of the order
-# object's data has been created. This is where any custom order
-# processing should be implemented.
-# SHOP_HANDLER_ORDER = "cartridge.shop.checkout.default_order_handler"
-
-# Dotted package path and class name of the function that
-# is called on submit of the payment checkout step. This is where
-# integration with a payment gateway should be implemented.
-# SHOP_HANDLER_PAYMENT = "cartridge.shop.checkout.default_payment_handler"
-
-# Sequence of value/name pairs for order statuses.
-# SHOP_ORDER_STATUS_CHOICES = (
-#     (1, "Unprocessed"),
-#     (2, "Processed"),
-# )
-
-# Sequence of value/name pairs for types of product options,
-# eg Size, Colour.
-# SHOP_OPTION_TYPE_CHOICES = (
-#     (1, "Size"),
-#     (2, "Colour"),
-# )
-
-# Sequence of indexes from the SHOP_OPTION_TYPE_CHOICES setting that
-# control how the options should be ordered in the admin,
-# eg for "Colour" then "Size" given the above:
-# SHOP_OPTION_ADMIN_ORDER = (2, 1)
-
-######################
 # MEZZANINE SETTINGS #
 ######################
 
@@ -173,7 +107,7 @@ ALLOWED_HOSTS = []
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = None
+TIME_ZONE = 'UTC'
 
 # If you set this to True, Django will use timezone-aware datetimes.
 USE_TZ = True
@@ -309,7 +243,6 @@ INSTALLED_APPS = (
     "django.contrib.sites",
     "django.contrib.sitemaps",
     "django.contrib.staticfiles",
-    "cartridge.shop",
     "mezzanine.boot",
     "mezzanine.conf",
     "mezzanine.core",
@@ -338,6 +271,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.request",
     "django.core.context_processors.tz",
     "mezzanine.conf.context_processors.settings",
+    "mezzanine.pages.context_processors.page",
 )
 
 # List of middleware classes to use. Order is important; in the request phase,
@@ -352,7 +286,6 @@ MIDDLEWARE_CLASSES = (
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
-    "cartridge.shop.middleware.ShopMiddleware",
     "mezzanine.core.request.CurrentRequestMiddleware",
     "mezzanine.core.middleware.TemplateForDeviceMiddleware",
     "mezzanine.core.middleware.TemplateForHostMiddleware",
