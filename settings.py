@@ -361,25 +361,25 @@ ALLOWED_HOSTS = ['*']
 # DJANGO         #
 ##################
 SECRET_KEY = os.environ.get("SECRET_KEY", get_random_string(50, "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)"))
-NEVERCACHE_KEY = os.environ.get("SECRET_KEY", get_random_string(50, "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)"))
+NEVERCACHE_KEY = os.environ.get("NEVERCACHE_KEY", get_random_string(50, "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)"))
 
 ###################
 # S3 STATIC FILES #
 ###################
 
 AWS_QUERYSTRING_AUTH = False
-AWS_ACCESS_KEY_ID = "AKIAJH2OA5BLNCKS4NAQ"
-AWS_SECRET_ACCESS_KEY = "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"
-AWS_STORAGE_BUCKET_NAME = 'wportfolio'
+AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
+AWS_STORAGE_BUCKET_NAME = 'travisportfolio'
 AWS_PRELOAD_METADATA = True #helps collectstatic do updates
 
 STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 
-STATIC_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
+STATIC_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/static/'
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'grappelli/'
 
-MEDIA_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
+MEDIA_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/media/'
 ###########
 # LOGGING #
 ###########
