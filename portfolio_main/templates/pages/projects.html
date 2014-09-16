@@ -1,0 +1,43 @@
+{% extends 'base2.html' %}
+{% load staticfiles %}
+{% load pages_tags mezzanine_tags i18n future staticfiles %}
+
+{% block extra_head %}
+<script src="{% static "js/bootstrap.js" %}"></script>
+<script src="{% static "js/jquery-1.11.1.min.js" %}"></script>
+
+
+{% endblock %}
+{% block main %}
+    <div class="about">
+    <h3 class="about">Here are a bunch of my favorite projects I have built!</h3>
+    <h4> All my work is done open source and the you can follow the links to Github.</h4>
+    <div class="about">
+            <h2><a href="http://bookitquick.herokuapp.com">Wealth Concierge</a></h2>
+
+        <a href="http://wealthconcierge.herokuapp.com/"><img class="image" src="{% static 'img/wealthy.png' %}" width="500"
+                                                             height="350"></a>
+
+        <p class="projectDisc">I built an automated financial advisor. You are able to see the demo before login, but to
+            see the full features it is best to follow the steps through login.</p>
+
+        <p class="projectDisc">Recommends ETF's based on variety of factors including income, housing costs, age, and most importantly my
+            custom risk profile.</p>
+    </div>
+    {#<a href="{% url 'project' %}">Projects</a>#}
+            <h2><a href="http://bookitquick.herokuapp.com">BookIt</a></h2>
+
+        <a href="http://bookitquick.herokuapp.com"><img class="image" src="{% static 'img/bookit.png' %}" width="500"
+                                                        height="350"></a>
+        <p class="projectDisc"> BookIt is way to find events that only fit your schedule. It works with Google Calendar
+            and searches for events based on your open days.</p>
+        <p class="projectDisc"> You can invite your friends and find events that work for both of your schedules too!</p>
+
+    </div>
+{% endblock %}
+
+{% block right_panel %}
+    {% ifinstalled mezzanine.twitter %}
+        {% include "twitter/tweets.html" %}
+    {% endifinstalled %}
+{% endblock %}

@@ -31,7 +31,13 @@ urlpatterns += patterns('',
     # one homepage pattern, so if you use a different one, comment this
     # one out.
 
-    url("^$", direct_to_template, {"template": "index.html"}, name="home"),
+    # url("^$", direct_to_template, {"template": "index.html"}, name="home"),
+    url("^$", 'portfolio_main.views.landing', name='landing'),
+    url("^home/$", 'portfolio_main.views.home', name='home'),
+    url('^projects/$', 'portfolio_main.views.projects', name='projects'),
+    url('^blog/$', 'portfolio_main.views.blog', name='blog'),
+    url("^resume/$", 'portfolio_main.views.resume', name='resume'),
+
 
     # HOMEPAGE AS AN EDITABLE PAGE IN THE PAGE TREE
     # ---------------------------------------------
