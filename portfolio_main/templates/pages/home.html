@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 {% extends "base.html" %}
-
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
 <body>
-home page
+
+
+{% block main %}
+    <h2 class="title"> My Story</h2>
+    <p class="title">
+    This site is my portal to express my views, help others, and show of some my projects I love to work on. It will be full of book
+        reviews, my ways I overcame challenges, and Entrepreneurial thoughts and resources. I hope you are able to find something you like.
+        </p>
+    <p class="title">
+    I am currently a student whom loves a variety of things. My two biggest passions are technology and economics. I spend the majority of my time programming and learning.
+    I never want to stop learning and a big reason I made this site is to help remember all things I learn. I will be writing a summary and review for all new books I read and several of the
+    great ones I read in the past. I am in the process of documenting the struggles and gratification of entrepreneurship. I have a great passion for these items and I hope that I reach others who share that passion.
+    Feel free to email, tweet or connect with me. I hope you enjoy visit!
+
+
+    </p>
+    <h2 class="title">Personal Story Timeline</h2>
+<p class="title">
+    I have a variety of interest and have had wonderful life full of learning. I am happy to finally reach out and tell my own story. Below is a timeline of major personal events over the last year or so.</p>
+<ul id='timeline'>
+  <li class='work'>
+    <input class='radio' id='work5' name='works' type='radio' checked>
+    <div class="relative">
+      <label for='work5'>Web Development Bootcamp at RocketSpace</label>
+      <span class='date'>August 2014</span>
+      <span class='circle'></span>
+    </div>
+    <div class='content'>
+      <p>
+          Spent the entire summer learning programming during a 12 week bootcamp. One of the best decisions of my life. I got hooked really fast and now spend most of my time working on side projects while taking classes for my senior year.
+
+      </p>
+    </div>
+  </li>
+  <li class='work'>
+    <input class='radio' id='work4' name='works' type='radio'>
+    <div class="relative">
+      <label for='work4'>Won Saint Mary's Idea Competition</label>
+      <span class='date'>March 4th 2014</span>
+      <span class='circle'></span>
+    </div>
+    <div class='content'>
+      <p>
+          I entered this competition after seeing my Mom priced gouged by healthcare costs. I came up with an idea in less than a week
+          and put together a SWOT analysis. After making the finals, I found my idea to broad and pivoted to something better. This was the first
+          major award I ever won. I learned an incredible amount in a short time because of it.
+      </p>
+    </div>
+  </li>
+  <li class='work'>
+    <input class='radio' id='work3' name='works' type='radio'>
+    <div class="relative">
+      <label for='work3'>Transferred to Saint Mary's</label>
+      <span class='date'>September 2013  </span>
+      <span class='circle'></span>
+    </div>
+    <div class='content'>
+      <p>
+          After working two jobs for long enough, I decided it was time to finish my degree quickly. I picked Saint Mary's because I though I could stand out and I could
+          build great relationships with my professors. I have not been disappointed. I love to have in depth discussions on
+          finance, economics, and in the Seminar program. Saint Mary's is wonderful institution which allowed me to stay in the Bay Area.
+      </p>
+    </div>
+  </li>
+{#  <li class='work'>#}
+{#    <input class='radio' id='work2' name='works' type='radio'>#}
+{#    <div class="relative">#}
+{#      <label for='work2'>Lorem ipsum dolor sit amet</label>#}
+{#      <span class='date'>09 May 2013</span>#}
+{#      <span class='circle'></span>#}
+{#    </div>#}
+{#    <div class='content'>#}
+{#      <p>#}
+{#        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.#}
+{#      </p>#}
+{#    </div>#}
+{#  </li>#}
+{#  <li class='work'>#}
+{#    <input class='radio' id='work1' name='works' type='radio'>#}
+{#    <div class="relative">#}
+{#      <label for='work1'>Lorem ipsum dolor sit amet</label>#}
+{#      <span class='date'>08 May 2013</span>#}
+{#      <span class='circle'></span>#}
+{#    </div>#}
+{#    <div class='content'>#}
+{#      <p>#}
+{#        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.#}
+{#      </p>#}
+{#    </div>#}
+{#  </li>#}
+</ul>
+{% endblock %}
 </body>
-</html>
