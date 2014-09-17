@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base4.html" %}
 {% load i18n future mezzanine_tags blog_tags keyword_tags disqus_tags %}
 
 {% block meta_title %}{% if page %}{{ page.meta_title }}{% else %}{% trans "Blog" %}{% endif %}{% endblock %}
@@ -14,7 +14,7 @@
 {% block meta_description %}{% metablock %}
 {{ page.description }}
 {% endmetablock %}{% endblock %}
-
+<body>
 {% block title %}
 {#{% if page %}#}
 {#{% editable page.title %}{{ page.title }}{% endeditable %}#}
@@ -154,6 +154,7 @@
 
 {% endblock %}
 
-{#{% block right_panel %}#}
-{#{% include "blog/includes/filter_panel.html" %}#}
-{#{% endblock %}#}
+
+{% block right_panel %}
+{% include "blog/includes/filter_panel.html" %}
+{% endblock %}

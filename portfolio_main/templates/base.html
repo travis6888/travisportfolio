@@ -65,6 +65,8 @@
 
 </div>
 <div class="navbar-collapse collapse">
+    <a class="navbar-brand" href="{% url 'home' %}">About</a>
+
     <a class="navbar-brand" href="{% url 'projects' %}">Projects</a>
     <a class="navbar-brand" href="{% url 'blog' %}">Blog</a>
     <a class="navbar-brand" href="{% url 'resume' %}">Résumé</a>
@@ -127,13 +129,19 @@
 
 <footer>
 <div class="container">
-{% page_menu "pages/menus/footer.html" %}
+<div class="row">
+    <a href="mailto:travis@traviscockcroft.com">Email</a>
+
+        <a href="http://www.linkedin.com/in/traviscockcroft/">LinkedIn</a>
+        <a href="http://www.github.com/travis6888/">GitHub</a>
+                <a href="https://twitter.com/travi88">Twitter</a>
 
 
-</div>
+
+    </div>
 </footer>
-
-{% include "includes/footer_scripts.html" %}
+{##}
+{#{% include "includes/footer_scripts.html" %}#}
 
 </body>
 </html>

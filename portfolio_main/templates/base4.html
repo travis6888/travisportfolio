@@ -43,39 +43,39 @@
 <script src="{% static "js/respond.min.js" %}"></script>
 <![endif]-->
     <link rel="stylesheet" href="{% static "css/custom.css" %}">
-<script src="{% static "js/resume.js" %}"></script>
-<link href="http://daneden.github.io/animate.css/animate.min.css" rel='stylesheet' type='text/css'>
 
 {% block extra_head %}
 
 {% endblock %}
 </head>
-{##}
-{#<body id="{% block body_id %}body{% endblock %}">#}
-{##}
-{#<div class="navbar navbar-default navbar-fixed-top" role="navigation">#}
-{#<div class="container">#}
-{#<div class="navbar-header">#}
-{#    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">#}
-{#        <span class="sr-only">{% trans "Toggle Navigation" %}</span>#}
-{#        <span class="icon-bar"></span>#}
-{#        <span class="icon-bar"></span>#}
-{#        <span class="icon-bar"></span>#}
-{#    </button>#}
-{#    {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}#}
-{#    {% if settings.SITE_TAGLINE %}<p class="navbar-text visible-lg">{{ settings.SITE_TAGLINE }}</p>{% endif %}#}
-{##}
-{#</div>#}
-{#<div class="navbar-collapse collapse">#}
-{#    <a class="navbar-brand" href="{% url 'projects' %}">Projects</a>#}
-{#    <a class="navbar-brand" href="{% url 'blog' %}">Blog</a>#}
-{#    <a class="navbar-brand" href="{% url 'resume' %}">Résumé</a>#}
-{##}
-{#    {% search_form "all" %}#}
-{#    {% page_menu "pages/menus/dropdown.html" %}#}
-{#</div>#}
-{#</div>#}
-{#</div>#}
+
+<body id="{% block body_id %}body{% endblock %}">
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">{% trans "Toggle Navigation" %}</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}
+    {% if settings.SITE_TAGLINE %}<p class="navbar-text visible-lg">{{ settings.SITE_TAGLINE }}</p>{% endif %}
+
+</div>
+<div class="navbar-collapse collapse">
+    <a class="navbar-brand" href="{% url 'home' %}">About</a>
+
+    <a class="navbar-brand" href="{% url 'projects' %}">Projects</a>
+    <a class="navbar-brand" href="{% url 'blog' %}">Blog</a>
+    <a class="navbar-brand" href="{% url 'resume' %}">Résumé</a>
+
+    {% search_form "all" %}
+    {% page_menu "pages/menus/dropdown.html" %}
+</div>
+</div>
+</div>
 
 <div class="container">
 
@@ -105,54 +105,29 @@
 {#    {% endblock %}#}
 {#</div>#}
 
-<div class="col-md-12 middle">
+<div class="col-md-7 middle">
     {% block main %}{% endblock %}
 </div>
 
-{#<div class="col-md-3 right">#}
-{#    {% nevercache %}#}
-{#    {% include "includes/user_panel.html" %}#}
-{#    {% endnevercache %}#}
-{#    <div class="panel panel-default">#}
-{#    <div class="panel-body">#}
-{#    {% block right_panel %}#}
-{#    {% ifinstalled mezzanine.twitter %}#}
-{#    {% include "twitter/tweets.html" %}#}
-{#    {% endifinstalled %}#}
-{#    {% endblock %}#}
-{#    </div>#}
-{#    </div>#}
-{#</div>#}
+<div class="col-md-3 right">
+    {% nevercache %}
+    {% include "includes/user_panel.html" %}
+    {% endnevercache %}
+    <div class="panel panel-default">
+    <div class="panel-body">
+    {% block right_panel %}
+    {% ifinstalled mezzanine.twitter %}
+    {% include "twitter/tweets.html" %}
+    {% endifinstalled %}
+    {% endblock %}
+    </div>
+    </div>
+</div>
 
 </div>
 </div>
-
-{#<footer>#}
-{#<div class="container">#}
-{#{% page_menu "pages/menus/footer.html" %}#}
-{##}
-{#<div class="row">#}
-{#<p class="site-info text-center">#}
-{#    {% trans "Powered by" %}#}
-{#    <a href="http://mezzanine.jupo.org">Mezzanine</a>{% ifinstalled cartridge.shop %},#}
-{#    <a href="http://cartridge.jupo.org">Cartridge</a>{% endifinstalled %}#}
-{#    {% trans "and" %}#}
-{#    <a href="http://www.djangoproject.com">Django</a>#}
-{#    <span class="separator">|</span>#}
-{#    {% trans "Theme by" %} <a target="_blank" href="http://getbootstrap.com">Bootstrap</a>#}
-{#    {% ifinstalled mezzanine.mobile %}#}
-{#    <span class="separator">|</span>#}
-{#    <a href="{% url "set_device" "mobile" %}?next={{ request.path }}">{% trans "View Mobile Site" %}</a>#}
-{#    {% endifinstalled %}#}
-{#</p>#}
-{#</div>#}
-
-{#</div>#}
-{#</footer>#}
 
 <footer>
-{% page_menu "pages/menus/footer.html" %}
-
 <div class="container">
 <div class="row">
     <a href="mailto:travis@traviscockcroft.com">Email</a>
@@ -166,8 +141,8 @@
     </div>
 </div>
 </footer>
-
-{% include "includes/footer_scripts.html" %}
+{##}
+{#{% include "includes/footer_scripts.html" %}#}
 
 </body>
 </html>
