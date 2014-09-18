@@ -343,15 +343,15 @@ label {
     text-align: center;
     margin: 40px;
 }
-.row {
-    display: table;
-}
+/*.row {*/
+    /*display: table;*/
+/*}*/
 
-[class*="col-"] {
-    float: none;
-    display: table-cell;
-    vertical-align: top;
-}
+/*[class*="col-"] {*/
+    /*float: none;*/
+    /*display: table-cell;*/
+    /*vertical-align: top;*/
+/*}*/
 .navbar-default {
     background-color: #000000;
 }
