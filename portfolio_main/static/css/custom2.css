@@ -59,6 +59,7 @@ body{
     font-size: 33px;
     /*font-family: Satisfy, cursive;*/
     color: #ffffff;
+    padding: 30px;
 }
 .knowMe a{
     color: #ffffff;
@@ -111,3 +112,6 @@ body{
     /*display: table-cell;*/
     /*vertical-align: top;*/
 /*}*/
+.post-meta a{
+    color: #ffffff;
+}

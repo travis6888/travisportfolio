@@ -255,6 +255,7 @@ INSTALLED_APPS = (
     "mezzanine.twitter",
     "storages",
     "gunicorn",
+    'south',
     #"mezzanine.accounts",
     #"mezzanine.mobile",
 )
