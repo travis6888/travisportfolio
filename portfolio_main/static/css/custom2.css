@@ -9,7 +9,7 @@ body{
 
 }
 .logo{
-  margin: 200px 0 20px 0;
+  margin: 100px 0 20px 0;
 
 
 }
@@ -35,7 +35,7 @@ body{
 
 }
 .logo{
-  margin: 200px 0 20px 0;
+  margin: 100px 0 20px 0;
 
 
 }
@@ -52,21 +52,24 @@ body{
     border: 3px solid #ffffff;
 }
 }
-.knowMe{
+.knowMe {
     text-align: center;
-    background-color: #ffffff;
+    background-color: #000000;
     border-radius: 10px;
     font-size: 33px;
-        /*font-family: Satisfy, cursive;*/
-    color: #000000;
-
-
-
+    /*font-family: Satisfy, cursive;*/
+    color: #ffffff;
 }
+.knowMe a{
+    color: #ffffff;
+}
+
+
+
 .knowMe:hover{
     -webkit-transition: .5s ease;
     transition: .8s ease;
-    box-shadow: 0 0 10px #00c4e8;
+    box-shadow: 0 0 10px #ffffff;
 }
 .greeting h1{
     letter-spacing: 2px;
@@ -81,7 +84,7 @@ body{
 
     text-align: center;
 
-    margin: 40px;
+    margin:  50px;
     font-size: 60px;
     /*text-shadow: -4px 6px 6px rgba(150, 150, 150, 1);*/
 }
@@ -96,7 +99,7 @@ body{
 }
 .welcome h3 {
         text-align: center;
-
+    margin: 100px 50px 50px 50px;
     font-size: 35px;}
 
 /*.row {*/

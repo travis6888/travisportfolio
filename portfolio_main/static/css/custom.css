@@ -238,7 +238,7 @@ h2 {
   overflow: hidden;
 }
 
-label {
+.relative label {
   font-size: 1.3em;
   position: absolute;
   z-index: 100;
@@ -267,7 +267,7 @@ label {
 }
 .radio:checked ~ .content p {
   max-height: 200px;
-  color: #000000;
+  color: #ffffff;
   transition: color 0.3s linear 0.3s;
 }
 
@@ -297,6 +297,10 @@ label {
   .content {
     padding-top: 45px;
     border-color: #00c4e8;
+
+  }
+  .content:before p{
+      color: #ffffff;
   }
   .content:before, .content:after {
     border: solid transparent;
@@ -308,6 +312,7 @@ label {
     top: -16px;
     left: 50px;
     margin-left: -17px;
+      color: #ffffff;
   }
   .content:after {
     border-bottom-color: #00c4e8;
@@ -315,6 +320,7 @@ label {
     top: -20px;
     left: 50px;
     margin-left: -20px;
+      color: #ffffff;
   }
   .content p {
     font-size: 0.9em;
@@ -362,4 +368,14 @@ label {
 }
 body{
     color: white;
+}
+.panel-body{
+    color: #000000;
+}
+.panel-body a{
+    color: #000000;
+}
+.tweets{
+    border: 1px solid #000000;
+    padding: 10px;
 }
