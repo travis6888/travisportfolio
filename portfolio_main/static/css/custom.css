@@ -369,8 +369,13 @@ h2 {
 body{
     color: white;
 }
+.panel-default{
+    background-color: #9b9b9b;
+}
 .panel-body{
     color: #000000;
+        background-color: #9b9b9b;
+
 }
 .panel-body a{
     color: #000000;
