@@ -167,7 +167,7 @@ h2 {
   list-style: none;
   margin: 50px 0 30px 120px;
   padding-left: 30px;
-  border-left: 8px solid #00c4e8;
+  border-left: 8px solid #ffffff;
 }
 #timeline li {
   margin: 40px 0;
@@ -192,14 +192,15 @@ h2 {
   left: -44px;
   width: 10px;
   height: 10px;
-  background: #00c4e8;
-  border: 5px solid #00c4e8;
+  background: #ffffff;
+  border: 5px solid #ffffff;
   border-radius: 50%;
   display: block;
   position: absolute;
 }
 
 .content {
+          background-color: #000000;
   max-height: 20px;
   padding: 50px 20px 0;
   border-color: transparent;
@@ -207,8 +208,10 @@ h2 {
   border-style: solid;
   border-radius: 0.5em;
   position: relative;
+
 }
 .content:before, .content:after {
+
   content: "";
   width: 0;
   height: 0;
@@ -224,7 +227,8 @@ h2 {
   margin-top: -20px;
 }
 .content:after {
-  border-right-color: #00c4e8;
+
+  border-right-color: #ffffff;
   border-width: 17px;
   top: 50%;
   margin-top: -17px;
@@ -239,6 +243,7 @@ h2 {
 }
 
 .relative label {
+   padding-left: 10px;
   font-size: 1.3em;
   position: absolute;
   z-index: 100;
@@ -256,11 +261,12 @@ h2 {
   transform: translateX(42px);
 }
 .radio:checked + .relative .circle {
-  background: #00c4e8;
+  background: #ffffff;
 }
 .radio:checked ~ .content {
+
   max-height: 220px;
-  border-color: #00c4e8;
+  border-color: #ffffff;
   margin-right: 20px;
   transform: translateX(20px);
   transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
@@ -296,7 +302,9 @@ h2 {
 
   .content {
     padding-top: 45px;
-    border-color: #00c4e8;
+    border-color: #ffffff;
+            background-color: #000000;
+
 
   }
   .content:before p{
@@ -315,7 +323,7 @@ h2 {
       color: #ffffff;
   }
   .content:after {
-    border-bottom-color: #00c4e8;
+    border-bottom-color: #ffffff;
     border-width: 20px;
     top: -20px;
     left: 50px;
