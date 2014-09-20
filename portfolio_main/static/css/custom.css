@@ -233,7 +233,7 @@ h2 {
   max-height: 0;
   color: transparent;
   text-align: justify;
-  word-break: break-word;
+  /*word-break: break-word;*/
   hyphens: auto;
   overflow: hidden;
 }
@@ -362,20 +362,28 @@ h2 {
     background-color: #000000;
 }
 
-
+.footer a{
+    color: #000000;
+    text-align: center;
+}
 .footer {
+    text-align: center;
+    color: #000000;
     /*background-color: #FF0000;*/
 }
 body{
     color: white;
 }
 .panel-default{
-    background-color: #9b9b9b;
+    background-color: #e3e3e3;
 }
 .panel-body{
     color: #000000;
-        background-color: #9b9b9b;
+        background-color: #e3e3e3;
 
+}
+.panel-body h3{
+    text-align: center;
 }
 .panel-body a{
     color: #000000;
@@ -383,4 +391,43 @@ body{
 .tweets{
     border: 1px solid #000000;
     padding: 10px;
+}
+.projectText{
+    background-color: #000000;
+    color: #ffffff;
+    border: #ffffff solid 1px  ;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 10px;
+
+
+}
+.projectText:hover{
+        -webkit-transition: .5s ease;
+    transition: .8s ease;
+    box-shadow: 0 0 20px #ffffff;
+
+}
+.aboutTopic {
+    text-align: center;
+    background-color: #000000;
+    border: #ffffff solid 1px;
+    border-radius: 50px;
+    /*vertical-align: 50%;*/
+    color: #ffffff;
+        padding: 30px;
+
+}
+.aboutTopic h1{
+    font-size: 47px;
+    font-weight: bold;
+    padding: 22px;
+}
+.aboutTopic a{
+    font-size: 37px;
+    font-weight: bold;
+}
+.img-responsive{
+    display: inherit;
+    text-align: center;
 }

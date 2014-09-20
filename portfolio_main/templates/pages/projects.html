@@ -3,36 +3,89 @@
 {% load pages_tags mezzanine_tags i18n future staticfiles %}
 
 {% block extra_head %}
-<script src="{% static "js/bootstrap.js" %}"></script>
-<script src="{% static "js/jquery-1.11.1.min.js" %}"></script>
+    <script src="{% static "js/bootstrap.js" %}"></script>
+    <script src="{% static "js/jquery-1.11.1.min.js" %}"></script>
 
 
 {% endblock %}
 {% block main %}
-    <div class="about">
-    <h3 class="about">Sample Projects</h3>
-    <h4> My work is open source on Github</h4>
-    <div class="about">
-            <h2><a target="_blank" href="http://wealthconcierge.herokuapp.com">Wealth Concierge</a></h2>
+    <div class="col-md-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
 
-        <a  target="_blank" href="http://wealthconcierge.herokuapp.com/"><img class="image" src="{% static 'img/wealthy.png' %}" width="500"
-                                                             height="350"></a>
 
-        <p class="projectDisc">Wealth Concierge is an automated financial advisor built for entertainment purposes. The page asks you take the Demo as it's CTA and if you want to proceed you can log
-            in to see the full features.</p>
+                    <div class="aboutTopic">
+                        <h1 class="about">Sample Projects</h1>
+                    </div>
+                </div>
+                <div class="about">
 
-        <p class="projectDisc">Recommends Portfolio's based on a propierty algorthim that finds your risk profile and takes into account a variety of factors including income, housing costs, and age.</p>
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="aboutTopic">
+                            <a target="_blank" href="http://wealthconcierge.herokuapp.com">Wealth Concierge</a>
+                        </div>
 
-        <h4><a target="_blank" href="https://github.com/travis6888/wealthy">Github</a></h4>
+                        <a target="_blank" href="http://wealthconcierge.herokuapp.com/"><img class="image img-responsive" alt="Responsive image"
+                                                                                             src="{% static 'img/wealthy.png' %}"
+                                                                                             width="500"
+                                                                                             height="350"></a>
+
+
+                        <div class="projectText">
+                            <p class="projectDisc">Wealth Concierge is an automated financial advisor built for
+                                entertainment
+                                purposes. The page asks you take the Demo as it's CTA and if you want to proceed you
+                                can
+                                log
+                                in to see the full features.</p>
+
+                            <p class="projectDisc">Recommends Portfolio's based on a propierty algorthim that finds
+                                your
+                                risk
+                                profile and takes into account a variety of factors including income, housing costs,
+                                and
+                                age.</p>
+
+                            <h4><a target="_blank" href="https://github.com/travis6888/wealthy">Github</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="about">
+
+                        <div class="aboutTopic">
+
+                            <a target="_blank" href="http://bookitquick.herokuapp.com">BookIt</a>
+                        </div>
+                        <a target="_blank" href="http://bookitquick.herokuapp.com"><img class="image img-responsive" alt="Responsive image"
+                                                                                        src="{% static 'img/bookit.png' %}"
+                                                                                        width="500"
+                                                                                        height="350"></a>
+
+
+                        <div class="projectText">
+
+                            <p class="projectDisc"> Trying to plan events can be time consuming. BookIt helps you
+                                find
+                                events that fit
+                                your schedule. BootIt is synced with Google Calendar and searches for events via
+                                meetup,
+                                eventbrite, and
+                                more to get events based on the hours you are free and the activities you choose!
+                                Invite
+                                your friends
+                                and family to find events that work for both of your schedules too!</p>
+                            <h4><a target="_blank" href="https://github.com/travis6888/bookit">Github</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-            <h2><a target="_blank" href="http://bookitquick.herokuapp.com">BookIt</a></h2>
-
-        <a  target="_blank" href="http://bookitquick.herokuapp.com"><img class="image" src="{% static 'img/bookit.png' %}" width="500"
-                                                        height="350"></a>
-        <p class="projectDisc"> Trying to plan events can be time consuming. BookIt helps you find events that fit your schedule. BootIt is synced with Google Calendar and searches for events via meetup, eventbrite, and more to get events based on the hours you are free and the activities you choose! Invite your friends and family to find events that work for both of your schedules too!</p>
-                    <h4><a target="_blank" href="https://github.com/travis6888/bookit">Github</a></h4>
-
     </div>
+    </div>
+
 {% endblock %}
 
 {#{% block right_panel %}#}
