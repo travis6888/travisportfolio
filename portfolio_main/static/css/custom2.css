@@ -1,0 +1,117 @@
+body{
+    /*background-color: #000000;*/
+    color: #ffffff;
+    background-image: url(../img/grey_wash_wall.png);
+
+}
+.logoBack{
+    /*background-color: #000000;*/
+
+}
+.logo{
+  margin: 100px 0 20px 0;
+
+
+}
+.logoInner{
+    border: 7px solid #ffffff;
+    font-size: 34px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: left;
+    padding: 35px 25px 2px 2px;
+
+}
+.underBorder{
+    border: 3px solid #ffffff;
+}
+@media screen and (max-width: 767px){
+  body{
+    /*background-color: #000000;*/
+    color: #ffffff;
+}
+.logoBack{
+    /*background-color: #000000;*/
+
+}
+.logo{
+  margin: 100px 0 20px 0;
+
+
+}
+.logoInner{
+    border: 7px solid #ffffff;
+    font-size: 34px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: left;
+    padding: 35px 25px 2px 2px;
+
+}
+.underBorder{
+    border: 3px solid #ffffff;
+}
+}
+.knowMe {
+    text-align: center;
+    background-color: #000000;
+    border-radius: 10px;
+    font-size: 33px;
+    /*font-family: Satisfy, cursive;*/
+    color: #ffffff;
+    padding: 30px;
+}
+.knowMe a{
+    color: #ffffff;
+}
+
+
+
+.knowMe:hover{
+    -webkit-transition: .5s ease;
+    transition: .8s ease;
+    box-shadow: 0 0 10px #ffffff;
+}
+.greeting h1{
+    letter-spacing: 2px;
+    /*text-shadow: -4px 6px 6px rgba(150, 150, 150, 1);*/
+    text-align: center;
+    margin: 50px;
+    font-size: 45px;
+        /*font-family: Satisfy, cursive;*/
+
+}
+.name h1 {
+
+    text-align: center;
+
+    margin:  50px;
+    font-size: 60px;
+    /*text-shadow: -4px 6px 6px rgba(150, 150, 150, 1);*/
+}
+    /*font-family: Satisfy, cursive;*/
+
+
+.details h3{
+    margin: 30px;
+          text-align: center;
+
+
+}
+.welcome h3 {
+        text-align: center;
+    margin: 100px 50px 50px 50px;
+    font-size: 35px;}
+
+/*.row {*/
+    /*display: table;*/
+/*}*/
+
+/*[class*="col-"] {*/
+    /*float: none;*/
+    /*display: table-cell;*/
+    /*vertical-align: top;*/
+/*}*/
+.post-meta a{
+    color: #ffffff;
+}

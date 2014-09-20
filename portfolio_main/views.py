@@ -8,7 +8,7 @@ def home(request):
     return render(request, 'pages/home.html')
 
 def landing(request):
-    return render(request, 'pages/landing.html')
+    return render(request, 'pages/newlanding.html')
 
 
 def projects(request):

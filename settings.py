@@ -230,6 +230,7 @@ ROOT_URLCONF = "%s.urls" % PROJECT_DIRNAME
 TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 
 
+
 ################
 # APPLICATIONS #
 ################
@@ -255,6 +256,8 @@ INSTALLED_APPS = (
     "mezzanine.twitter",
     "storages",
     "gunicorn",
+    'south',
+
     #"mezzanine.accounts",
     #"mezzanine.mobile",
 )
@@ -382,6 +385,7 @@ STATIC_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/static/'
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'grappelli/'
 
 MEDIA_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/media/'
+
 ###########
 # LOGGING #
 ###########

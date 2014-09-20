@@ -8,8 +8,8 @@ $(document).ready(function() {
 
 //        $(this).parent().parent().siblings('.extra-events').toggle()
     });
-    $('.knowMe').click( function(){
-       window.location.replace("/home/")
-
-    });
+//    $('.knowMe').click( function(){
+//       window.location.replace("/home/")
+//
+//    });
 });
