@@ -423,7 +423,7 @@ body{
     border-radius: 50px;
     /*vertical-align: 50%;*/
     color: #ffffff;
-        padding: 30px;
+        padding: 10px;
 
 }
 .aboutTopic h1{
@@ -438,4 +438,64 @@ body{
 .img-responsive{
     display: inherit;
     text-align: center;
+}
+.blogText{
+    background-color: #000000;
+    color: #ffffff;
+    border: #ffffff solid 1px  ;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 10px;
+}
+.blogTitle{
+    text-align: center;
+    background-color: #000000;
+    border: #ffffff solid 1px;
+    border-radius: 50px;
+    /*vertical-align: 50%;*/
+    color: #ffffff;
+        padding: 10px;
+
+}
+.editable-original{
+    text-align: center;
+    background-color: #000000;
+    border: #ffffff solid 1px;
+    border-radius: 50px;
+    /*vertical-align: 50%;*/
+    color: #ffffff;
+        padding: 10px;
+}
+.editable-original a{
+    color: white;
+}
+.blogText p{
+    text-indent: 22px;
+
+}
+.blogImage{
+    text-align: center;
+    /*max-width: 630px;*/
+    /*max-height: 450px;*/
+    /*width: 630px;*/
+    /*height:450px;*/
+}
+@media screen and (max-width: 767px) {
+    .blogImage{
+    /*max-width: 350px;*/
+    /*max-height: 250px;*/
+}
+    h1{
+        text-align: center;
+     background-color: #000000;
+    border: #ffffff solid 1px;
+    border-radius: 50px;
+    /*vertical-align: 50%;*/
+    color: #ffffff;
+        padding: 10px;
+
+    }
+}
+.post-meta a{
+    color: white;
 }
