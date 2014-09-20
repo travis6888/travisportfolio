@@ -17,7 +17,7 @@ def projects(request):
 
 def blog(request):
     blog_posts = BlogPost.objects.all()
-    return render(request, 'blog_post_list.html', {'blog_posts': blog_posts})
+    return render(request, 'blog/blog_post_list.html', {'blog_posts': blog_posts})
 
 
 def resume(request):

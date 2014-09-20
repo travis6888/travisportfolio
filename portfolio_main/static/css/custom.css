@@ -439,3 +439,14 @@ body{
     display: inherit;
     text-align: center;
 }
+.blogText{
+    background-color: #000000;
+    color: #ffffff;
+    border: #ffffff solid 1px  ;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 10px;
+}
+.editable-original{
+    text-align: center;
+}
